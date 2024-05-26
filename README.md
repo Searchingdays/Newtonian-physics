@@ -1,1 +1,1 @@
-# Newtonian-physics
+Scientific computing
