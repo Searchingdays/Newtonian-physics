@@ -28,9 +28,9 @@ class series():
 
 
 two = series(2,20)
-th = series(3,20)
-fo = series(4,20)
-fi = series(5,8)
+th = series(3,30)
+fo = series(4,40)
+fi = series(5,50)
 
 two.f()
 th.f()
@@ -51,15 +51,16 @@ def compare(x,n):
     plt.show()
     return l,r
 
-plt.scatter(two.ax,two.l,label="x=2")
-plt.ylim(-200,1000)
-plt.scatter(th.ax,th.l, label="x=3")
-plt.scatter(fo.ax,fo.l, label="x=4")
+#plt.scatter(two.ax,two.l,label="x=2")
+print(two.l)
+#plt.ylim(-200,1000)
+#plt.scatter(th.ax,th.l, label="x=3")
+#plt.scatter(fo.ax,fo.l, label="x=4")
 plt.scatter(fi.ax,fi.l, label="x=5")
-plt.title(label ="the series (sum) from i=0 to i=n x^(2*n)/n!")
-plt.legend()
+#plt.title(label ="the series (sum) from i=0 to i=n x^(2*n)/n!")
+#plt.legend()
 
-#print(compare(2,20))
+#print(compare(2,10))
 plt.show()
 
 
