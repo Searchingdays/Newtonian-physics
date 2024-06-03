@@ -3,6 +3,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+def prepare_input(x,y, axis):
+    x, y = map(np.asarray, (x,y))
+    if x.ndim != 1:
+        raise ValueError("x must be 1d")
+    if x.shape[0] < 2:
+        raise ValueError("x must have at least two points")
+
 def linear_spline(x, y, xp, axis=None):
     """ a linear interpolating polynomial between given points,
     currently along one dimension """
